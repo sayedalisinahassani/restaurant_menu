@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="restaurant.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <div class="restaurant">
+            <div class="header">
+                <h1>Jimmy's Diner</h1>
+                <p>The best burgers and pizzas in town.</p>
+            </div>
+            <div class="menu">
+                <img src="Screenshot_20240118-125028.jpg" class="foods">
+                <div class="properties">
+                    <h2 class="dis">Pizza</h2>
+                    <p class="dis">pepperoni, mushrom, mozarella</p> 
+                    <p class="dis">$14</p>
+                    <button class="pizza_request_btn button">+</button>
+                </div>
+            </div>
+            <hr>
+            <div class="menu">
+                <img src="Screenshot_20240118-125013.jpg" class="foods">
+                <div class="properties">
+                    <h2 class="dis">Hamburger</h2>
+                    <p class="dis">beef, cheese, lettuce</p> 
+                    <p class="dis">$12</p>
+                    <button class="hamburger_request_btn button">+</button>
+                </div>
+            </div>
+            <hr>
+            <div class="menu">
+                <img src="Screenshot_20240118-125027.jpg" class="foods">
+                <div class="properties">
+                    <h2 class="dis">Beer</h2>
+                    <p class="dis">grain, hops, yeast, water</p> 
+                    <p class="dis">$12</p>
+                    <button class="beer_request_btn button">+</button>
+                </div>
+            </div>
+            <hr>
+            <div class="card_details hidden">
+                <h2>Enter card details</h2>
+                <input type="text" class="input_button" onchange=chechprice() required placeholder="Enter your name">
+                <input type="number" class="input_button" onchange=chechprice() placeholder="Enter card number">
+                <input type="text" class="input_button" onchange=chechprice() placeholder="Enter CVV">
+                <button class="pay_button" disabled>Pay</button>
+            </div>
+            <div class="send_menu hidden2">
+                <div class="requested_menu">
+                    <h2>Your order</h2>
+                    <p class="remove remove_pizza hidden3 ">remove</p>
+                    <p class="price_foods price1 hidden5"></p>
+                    <p class="requested_food pizza_food hidden5"> </p>
+                    <p class="remove remove_hamberger hidden3">remove</p>
+                    <p class="price_foods price2 hidden5"></p>
+                    <p class="requested_food Hamburger_food hidden5"> </p>
+                    <p class="remove remove_beer hidden3">remove</p>
+                    <p class="price_foods price3 hidden5"></p>
+                    <p class="requested_food beer_class hidden5"> </p>
+                </div> 
+                
+                <hr class="hr">
+                <div class="total_price">
+                    <p class="req">Total price:</p>
+                    <p class="req total"></p>
+                </div>
+                <button class="complete_order">Complete order</button>
+            </div>
+            <div class="final hidden4">
+                <h4>thanks,james! your order is on its way!</h4>
+            </div>
+        </div>
+        <script src="restaurant.js"></script>
+    </body>
+</html>
